@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Impress - Write Your Future, Draw Your Dream.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fc;
+        }
+        .gradient-bg {
+            background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa2e9, #79a9f0, #67b0f4, #54b7f8, #40bdfb, #2cc4fd, #15cbfe);
+        }
+        .text-gradient {
+            background-image: linear-gradient(45deg, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1);
+            
+            -webkit-text-fill-color: transparent;
+        }
+        .notification {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(52, 211, 153, 0.95);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 9999px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            z-index: 50;
+        }
+        .notification.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="https://res.cloudinary.com/dujxs5154/image/upload/v1757137135/logo_mottu_zmn9kw.jpg" alt="Multi Impress Logo" class="h-20 w-20 rounded-full shadow-lg p-2 bg-white">
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-800">Multi Impress</h1>
+                    <p class="text-lg text-gray-600">K.M.M Private Limited</p>
+                </div>
+            </div>
+            <nav class="mt-4 sm:mt-0">
+                <ul class="flex space-x-6 text-gray-600 font-medium">
+                    <li><a href="#about" class="hover:text-purple-600 transition duration-300">About Us</a></li>
+                    <li><a href="#team" class="hover:text-purple-600 transition duration-300">Our Team</a></li>
+                    <li><a href="#products" class="hover:text-purple-600 transition duration-300">Products</a></li>
+                    <li><a href="#contact" class="hover:text-purple-600 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="flex-grow">
+        <section class="gradient-bg py-20 text-white text-center rounded-b-3xl shadow-xl">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-wide animate-pulse">
+                    "Write Your Future, Draw Your Dream."
+                </h2>
+                <p class="mt-4 text-xl sm:text-2xl font-light max-w-2xl mx-auto">
+                    Explore our exquisite collection of pens that turn every stroke into a masterpiece.
+                </p>
+                <div class="mt-8 flex justify-center space-x-4">
+                    <a href="#products" class="bg-white text-purple-600 font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-gray-200 transition duration-300 transform hover:scale-105">
+                        Shop Now
+                    </a>
+                    <a href="#contact" class="border-2 border-white text-white font-semibold px-6 py-3 rounded-full hover:bg-white hover:text-purple-600 transition duration-300 transform hover:scale-105">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 bg-white rounded-3xl -mt-12 mx-4 sm:mx-8 lg:mx-16 shadow-2xl z-10 relative">
+            <div class="container mx-auto px-4">
+                <h3 class="text-3xl font-bold text-center text-purple-700 mb-8 transition-all duration-300 hover:scale-105">About Us</h3>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="rounded-2xl overflow-hidden shadow-xl">
+                        <img src="https://placehold.co/600x400/8aa2e9/ffffff?text=Our+Story" alt="Our Story" class="w-full h-auto">
+                    </div>
+                    <div class="text-gray-700 leading-relaxed">
+                        <p class="mb-4">
+                            K.M.M Private Limited, with its flagship product line Multi Impress, is dedicated to the art of writing and expression. Our mission is to provide instruments that not only write but also inspire creativity and precision. Each pen is a testament to quality craftsmanship and a passion for excellence.
+                        </p>
+                        <p>
+                            We believe that a pen is more than just a tool; it's a companion on your journey to success and a key to unlocking your imagination. With Multi Impress, every line you draw and every word you write is a step towards your dreams.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h3 class="text-3xl font-bold text-center text-purple-700 mb-8 transition-all duration-300 hover:scale-105">Our Team</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+                    <div class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="https://placehold.co/150x150/d16ba5/ffffff?text=Keerthivaruman.P" alt="Keerthivaruman.P" class="mx-auto rounded-full mb-4">
+                        <h4 class="text-xl font-semibold text-gray-800">Keerthivaruman.P</h4>
+                        <p class="text-gray-600 mt-2">( MD ) & ( HR )</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="https://placehold.co/150x150/d16ba5/ffffff?text=Meenaksh.S" alt="Meenaksh.S" class="mx-auto rounded-full mb-4">
+                        <h4 class="text-xl font-semibold text-gray-800">Meenaksh.S</h4>
+                        <p class="text-gray-600 mt-2">( R&D ) & ( Problem Addressing & Customer Service )</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="https://placehold.co/150x150/d16ba5/ffffff?text=Mohanraj.V" alt="Mohanraj.V" class="mx-auto rounded-full mb-4">
+                        <h4 class="text-xl font-semibold text-gray-800">Mohanraj.V</h4>
+                        <p class="text-gray-600 mt-2">( Finance Department ) & ( Promotion Department )</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h3 class="text-3xl font-bold text-center text-purple-700 mb-8 transition-all duration-300 hover:scale-105">Our Products</h3>
+                <button id="addAllBtn" class="bg-purple-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-purple-700 transition-all duration-300 transform hover:scale-105 mb-8 mx-auto block">
+                    Add All Products to Cart
+                </button>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Product Card 1 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="https://placehold.co/400x300/e6e6e6/000000?text=Multi+Impress+Classic" alt="Multi Impress Classic Pen" class="w-full h-48 object-cover rounded-xl mb-4">
+                        <h4 class="text-xl font-semibold text-gray-800">Multi Impress Classic</h4>
+                        <p class="text-gray-600 mt-2">A timeless design for the everyday writer.</p>
+                        <p class="text-2xl font-bold text-purple-600 mt-4">₹999</p>
+                        <button class="add-to-cart-btn w-full mt-4 bg-purple-600 text-white py-2 rounded-full font-bold hover:bg-purple-700 transition-all duration-300 transform hover:scale-105">Add to Cart</button>
+                        <button id="viewDetailsBtn" class="w-full mt-2 border-2 border-purple-600 text-purple-600 py-2 rounded-full font-bold hover:bg-purple-600 hover:text-white transition-all duration-300 transform hover:scale-105">View Details</button>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="https://placehold.co/400x300/e6e6e6/000000?text=The+Innovator+Pen" alt="The Innovator Pen" class="w-full h-48 object-cover rounded-xl mb-4">
+                        <h4 class="text-xl font-semibold text-gray-800">The Innovator Pen</h4>
+                        <p class="text-gray-600 mt-2">Smooth ink flow for your creative ideas.</p>
+                        <p class="text-2xl font-bold text-purple-600 mt-4">₹1499</p>
+                        <button class="add-to-cart-btn w-full mt-4 bg-purple-600 text-white py-2 rounded-full font-bold hover:bg-purple-700 transition-all duration-300 transform hover:scale-105">Add to Cart</button>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="https://placehold.co/400x300/e6e6e6/000000?text=Dream+Weaver+Set" alt="Dream Weaver Set" class="w-full h-48 object-cover rounded-xl mb-4">
+                        <h4 class="text-xl font-semibold text-gray-800">Dream Weaver Set</h4>
+                        <p class="text-gray-600 mt-2">A collection of pens for every occasion.</p>
+                        <p class="text-2xl font-bold text-purple-600 mt-4">₹2499</p>
+                        <button class="add-to-cart-btn w-full mt-4 bg-purple-600 text-white py-2 rounded-full font-bold hover:bg-purple-700 transition-all duration-300 transform hover:scale-105">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Detail Section (Initially hidden) -->
+        <section id="product-detail" class="py-16 bg-white hidden">
+            <div class="container mx-auto px-4">
+                <button id="backToProductsBtn" class="flex items-center text-purple-600 mb-8 hover:underline">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                    Back to Products
+                </button>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <img src="https://placehold.co/600x400/e6e6e6/000000?text=Multi+Impress+Classic" alt="Multi Impress Classic Pen" class="w-full h-auto object-cover rounded-2xl shadow-lg">
+                    </div>
+                    <div>
+                        <h3 class="text-4xl font-bold text-gray-800 mb-2">Multi Impress Classic</h3>
+                        <p class="text-2xl font-bold text-purple-600 mb-4">₹999</p>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Experience the perfect blend of style and substance with the Multi Impress Classic. Its ergonomic design ensures a comfortable grip, while the premium ink provides a smooth and consistent writing experience. Ideal for both daily use and special signatures, this pen is a testament to timeless elegance and superior performance.
+                        </p>
+                        <button class="add-to-cart-btn bg-purple-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-purple-700 transition-all duration-300 transform hover:scale-105">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h3 class="text-3xl font-bold text-center text-purple-700 mb-8 transition-all duration-300 hover:scale-105">Get in Touch</h3>
+                <div class="max-w-xl mx-auto">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                            <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring-purple-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring-purple-500">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring-purple-500"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-purple-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-purple-700 transition duration-300">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 K.M.M Private Limited. All rights reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">"Write Your Future, Draw Your Dream."</p>
+        </div>
+    </footer>
+
+    <!-- Notification element -->
+    <div id="notification" class="notification"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const addAllBtn = document.getElementById('addAllBtn');
+            const addToCartBtns = document.querySelectorAll('.add-to-cart-btn');
+            const viewDetailsBtn = document.getElementById('viewDetailsBtn');
+            const backToProductsBtn = document.getElementById('backToProductsBtn');
+            const productsSection = document.getElementById('products');
+            const productDetailSection = document.getElementById('product-detail');
+            const notification = document.getElementById('notification');
+            
+            function showNotification(message) {
+                notification.textContent = message;
+                notification.classList.add('show');
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                }, 3000);
+            }
+
+            addAllBtn.addEventListener('click', () => {
+                showNotification("All products added to cart!");
+            });
+
+            addToCartBtns.forEach(button => {
+                button.addEventListener('click', () => {
+                    showNotification("Product added to cart!");
+                });
+            });
+
+            viewDetailsBtn.addEventListener('click', () => {
+                productsSection.style.display = 'none';
+                productDetailSection.style.display = 'block';
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            backToProductsBtn.addEventListener('click', () => {
+                productDetailSection.style.display = 'none';
+                productsSection.style.display = 'block';
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
